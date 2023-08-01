@@ -2,12 +2,19 @@
 html {
     background-image: url("../images/background.jpg");
     position: absolute;
+    border-radius: 30px;
+    
 }
 
 /*nav and header*/
 
 :focus, :visited {
   box-shadow: -10px 10px 10px #ffffff7b;
+}
+
+header{
+  margin: 45px;
+  padding-top: 35px;
 }
 
 nav {
@@ -58,7 +65,7 @@ nav li {
 
 .topnav a{
   color: rgb(120, 76, 76);
-  text-align: right;
+  inline-size: 50px;
 }
 
 .topnav #open {
@@ -71,7 +78,7 @@ nav li {
 .navbar-brand {
  transition: font-size 0.5s ease;
  font-family: "Montserrat";
- font-size: 25px;
+ font-size: 50px;
  text-align: left;
 }
 
@@ -98,7 +105,6 @@ nav li {
  /* transition: top 0.5s ease; */
  font-size: 20px;
  transition: top 0.5s ease;
- text-align: center;
 }
 
 #myLinks li{
@@ -113,6 +119,7 @@ nav li {
  line-height: 50px;
  display: grid;
  grid-template-columns: 1px 4px;
+ align-items: center;
 }
 
 #myLinks a:hover {
@@ -140,22 +147,25 @@ nav li {
  top: 50%;
  left: 50%;
  transform: translate(-50%, -50%);
- text-align: center;
+ text-align: left;
  margin: auto;
  text-decoration: none;
- float: left;
 }
 
 .menu {
  position: relative;
- font-size: 25px;
+ float: right;
+ font-size: 20px;
  top: 50%;
- left: 20px;
  transform: translate(0, -50%);
  transition: left 0.5s ease;
  z-index:50; 
  font-family: "Montserrat";
- align-self: right;
+ font-size: larger;
+}
+
+.i{
+  text-align: right;
 }
 
 
@@ -174,21 +184,42 @@ nav li {
  /*footers*/
 
 footer {
-  text-align: center;
+  position: absolute;
+  background-size: 100%;
+  bottom: 0;
+  width: 100%;
+  padding-left: -5px;
+  padding-top: 30px;
+  height: 5.5rem;
   background-color: rgb(66, 21, 6);
-  padding: 10px 0;
-  border-radius: 10px;
   color: aliceblue;
   font-family: "Montserrat";
-  font-size: 10px;
+  text-align: center;
+  border-radius: 10px;
 }
 
-footer p:nth-child(2){
+footer h1{
   text-align: left;
+  display: inline;
+  font-size: 20px;
+  padding: 15px;
+  font-weight: 300;
 }
 
-footer p:nth-child(3){
+footer h2{
+  text-align: center;
+  display: inline;
+  font-size: 25px;
+  padding: 15px;
+  font-weight: 300;
+}
+
+footer p{
   text-align: right;
+  display: inline;
+  font-size: 20px;
+  font-weight: 300;
+  padding:15px;
 }
 
 footer a {
@@ -196,7 +227,18 @@ footer a {
    color: aliceblue;
 }
 
+/*overflow*//*
+body {
+  overflow-y: hidden; /* Hide vertical scrollbar 
+  overflow-x: hidden; /* Hide horizontal scrollbar *//*
+}*/
+
 /* home mobile*/
+
+main{
+  float: center;
+  padding: 250px 0px 370px 0px
+}
 
 .goodsense-explained{
   font-family: 'Montserrat', sans-serif;
@@ -220,23 +262,72 @@ footer a {
   text-align: center;
 }
 
+.goodsense-explained h1{
+  padding: 140px 0px 0px 0px;
+  font-size: 50px;
+}
+
 .goodsense-explained h2{
-  line-height: 35px;
+  line-height: 77px;
+  padding: 40px 0px 50px 0px;
+  font-size: 50px;
 }
 
 .goodsense-explained a{
   color: aliceblue;
   padding: 10px;
+  font-size: 25px;
+}
+
+/*projects mobile*/
+.projects-cointainer li{
+  text-decoration: none;
+}
+
+.projects-cointainer img{
+  align-items: left;
+  display: none;
+}
+
+.projects-cointainer h3{
+  text-align: right;
+}
+
+.projects-cointainer{
+  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700000;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 80px 50px 70px 50px;
+  border-radius: 30px;
+  margin-top: 180px;
+  margin-bottom: 260px;
+  margin-left: 50px;
+  margin-right: 50px;
+  box-shadow: 20px 20px 50px rgba(67, 21, 235, 0.5);
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255,0.5);
+  border-left: 1px solid rgba(255, 255, 255,0.5);
+  backdrop-filter: blur(25px);
+  color: aliceblue;
+  text-align: center;
 }
 
 /*about mobile*/
 
 img{
-  height: 350px;
-  width: 250px;
-  margin: 50px;
+  height: 750px;
+  width: 550px;
+  margin: 70px;
   margin-top: 15px;
   border-radius: 15px;
+}
+
+.about h1{
+  font-size: 550px;
 }
 
 .about-pg{
@@ -265,3 +356,5 @@ img{
   text-align: right;
   line-height: 25px3;
 }
+
+/*contact mobile*/
